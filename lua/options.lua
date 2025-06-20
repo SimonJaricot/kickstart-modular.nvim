@@ -77,3 +77,9 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+vim.o.foldmethod = 'expr' -- Use expression for folding
+vim.o.foldcolumn = '1'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldtext = ''
+vim.o.foldlevel = 99
+vim.o.foldenable = true -- Enable folding by default
